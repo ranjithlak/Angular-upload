@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+  "outDir": "../out-tsc/app",
+  "module": "es2015",
+  "baseUrl": "",
+  "types": [],
+  "typeRoots": [
+  "node_modules/@types"
+  ],
+  "lib": [
+  "es2017",
+  "dom"
+  ],
+  "paths": {
+  "@angular/": [
+  "../node_modules/@angular/"
+  ]
+  }
+  },
+  "exclude": [
+  "test.ts",
+  "**/*.spec.ts"
+  ]
+  }

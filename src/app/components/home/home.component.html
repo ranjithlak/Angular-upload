@@ -1,0 +1,41 @@
+<div id="qbootstrap-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 animate-box">
+                <h3>Contact Information</h3>
+                <div class="row contact-info-wrap">
+                    <div class="col-md-3">
+                        <p><span><i class="icon-location"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-phone"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-mail"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-globe-outline"></i></span> <a href="https://qbootstrap.com/">QBootstrap.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-1 animate-box">
+                <h3>Get In Touch</h3>
+                <form (submit)="newProduct(formData)" #formData="ngForm">
+                    <div class="form-group">
+                      <label for="name">Product Name:</label><input type='text' name='name' class="form-control" id="name" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="image">Image:</label><input type="file" name='image' class="form-control" id="image" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="description">Description:</label><input type='text' name='description' class="form-control" id="description" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label for="quantity">Quantity:</label><input type='number' name='quantity' class="form-control" id="quantity" ngModel>
+                    </div>
+                    <button type="submit">Add</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
